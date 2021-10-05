@@ -1,0 +1,123 @@
+body{
+    background-color: pink;
+}
+.wrapper{
+    width: 400px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 35% 35% 45% 45%;
+    box-shadow: 0px 0px 5px 10px rgba(245, 162, 204, 0.5);
+}
+.day{
+    position: relative;
+    width: 45%;
+    height: 10%;
+    left: 50%;
+    top:10%;
+    transform:translate(-50%);
+    background-color: rgb(241, 203, 209);
+    border-radius: 10px;
+    box-shadow: inset 0 -50px 200px 5px #ec84a7,
+                0px 10px 25px 0 rgba(245, 98, 171, 0.5);
+    text-align: center;
+    line-height: 1.5;
+    color:white;
+    font-size: 39px;
+}
+.circle{
+    position: relative;
+    left:50%;
+    top:20%;
+    transform:translate(-50%);
+    width: 300px;
+    height:300px;
+    border: 15px solid white;
+    border-radius: 50%;
+    box-shadow: inset 0 -50px 200px 5px #ec84a7,
+                0px 10px 25px 0 rgba(245, 98, 171, 0.5);
+}
+.deco{
+    position: relative;
+    top: 50%;
+    left:50%;
+    animation: tick 2s ease-in-out infinite;
+    transform-origin: 0 0;
+}
+#deco-vertical{
+    position:relative;
+    height: 300px;
+    width: 10px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+#deco-circle{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    background-color: #fff;
+
+}
+
+.hour{
+    height: 30%;
+    width: 12px;
+    background-color: rgb(241, 59, 156);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%);
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+}
+.minute{
+    height: 45%;
+    width: 8px;
+    border-radius: 10px;
+    background-color:rgb(153, 23, 114);
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%);
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+}
+.second{
+    height: 48%;
+    border-radius: 50%;
+    width: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-100%);
+    transform-origin: 0 0;
+    transform: rotate(180deg);
+}
+.pin{
+    position: absolute;
+    width: 40px;
+    height:40px;
+    background-color: rgb(246, 157, 187);
+    box-shadow: inset 0 -50px 200px 5px #ec84a7,
+        0px 0px 5px 2px rgba(245, 98, 171, 0.5);
+    border-radius: 50%;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+@keyframes tick {
+    0% {
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
